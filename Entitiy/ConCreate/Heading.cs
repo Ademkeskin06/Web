@@ -11,14 +11,14 @@ namespace Entitiy.ConCreate
     {
         [Key]
         public int ProductId { get; set; }
-        [Required,StringLength(50)]
+        [Required, StringLength(50)]
         public string ProductName { get; set; }
-        [Required,StringLength(50)]
+        [Required, StringLength(50)]
         public string Description { get; set; }
         [Required]
-        public DateTime ProductTime { get; set; }
+        public DateTime ProductTime { get; set; } = DateTime.Now; 
         [StringLength(200)]
-        public virtual comment comment { get; set; }
+        public virtual Comment comment { get; set; }
         public virtual Category Category { get; set; }
         public virtual Content Content { get; set; } 
         public virtual User User { get; set; }
