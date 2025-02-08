@@ -12,6 +12,8 @@ namespace Entitiy.ConCreate
         public string Name { get; set; }// içerik adı
         public string Description { get; set; }// açıklama 
         public DateTime CreatedDate { get; set; }// oluşturma tarihi
+        public int HeadingId { get; set; } 
+        public CommetID
 
 
 

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entitiy.ConCreate
 {
-    public class comment
+    public class Comment
     {
     }
 }

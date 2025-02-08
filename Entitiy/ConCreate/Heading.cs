@@ -18,10 +18,10 @@ namespace Entitiy.ConCreate
         [Required]
         public DateTime ProductTime { get; set; }
         [StringLength(200)]
-        public comment comment { get; set; }
-        public Category Category { get; set; }
-        public Content Content { get; set; } 
-        public User User { get; set; }
+        public virtual comment comment { get; set; }
+        public virtual Category Category { get; set; }
+        public virtual Content Content { get; set; } 
+        public virtual User User { get; set; }
         public List<Category> Categorys  {  get; set; }
         public List<Content> Contents { get; set; }
         public List<User> Users { get; set; }
